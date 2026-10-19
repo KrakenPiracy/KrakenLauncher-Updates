@@ -1,50 +1,53 @@
 <div align="center">
+  <img src="showcase/kraken-logo.png" alt="Kraken Launcher" width="150" />
 
-# KRAKEN.
+  # KRAKEN.
 
-### Your library. Your community.
+  **Your games. Your library. Your community.**
 
-**One place for your games, downloads, and friends.**
+  Organize your games, manage downloads, and connect with other players—all in one place.
 
-[**⬇ Download for Windows**](https://github.com/KrakenPiracy/KrakenLauncher-Updates/releases) · [View Releases](https://github.com/KrakenPiracy/KrakenLauncher-Updates/releases)
-
+  [**⬇ Download for Windows**](https://github.com/KrakenPiracy/KrakenLauncher-Updates/releases)
 </div>
 
 ---
 
-## Meet Kraken Launcher
+## Features
 
-Kraken is a modern Windows launcher that brings your game library and gaming community together in one clean, customizable experience.
+**Game Library** · **Discover** · **Downloads** · **Public Chat** · **Friends** · **Player Profiles**
 
-- **Game Library** — Organize your installed games, find artwork, and launch them in one click.
-- **Game Discovery** — Browse available catalogs and manage downloads.
-- **Download Manager** — Track progress and manage your download queue.
-- **Community Chat** — Talk with other players and share images.
-- **Friends & Profiles** — Discover who’s online and personalize your gaming profile.
-- **Updates** — Get notified when a new release is available.
+## A look inside Kraken
 
-## Screenshots
+These are screenshots from the real Windows launcher. Click any image to view it at full resolution.
 
-<div align="center">
+### Game Library
+[![Kraken Launcher — Game Library](showcase/game-library.png)](showcase/game-library.png)
 
-![Kraken Launcher showcase: game library, discovery, downloads, public chat, friends and profiles](showcase/kraken-screens.webp)
+### Discover Games
+[![Kraken Launcher — Discover Games](showcase/discover-games.png)](showcase/discover-games.png)
 
-<sub>Game Library · Discover · Downloads · Public Chat · Friends · Profiles</sub>
+### Download Manager
+[![Kraken Launcher — Download Manager](showcase/download-manager.png)](showcase/download-manager.png)
 
-</div>
+### Public Chat
+[![Kraken Launcher — Public Chat](showcase/public-chat.png)](showcase/public-chat.png)
 
-## Download
+### Friends
+[![Kraken Launcher — Friends](showcase/friends.png)](showcase/friends.png)
 
-**Windows 10 / 11 (64-bit)**
-
-[**Download Kraken Launcher**](https://github.com/KrakenPiracy/KrakenLauncher-Updates/releases)
-
-Open the latest release, download **`KrakenLauncher.exe`**, and launch it. No Python installation is required. Future updates are available from inside Kraken.
+### Player Profiles
+[![Kraken Launcher — Player Profiles](showcase/player-profiles.png)](showcase/player-profiles.png)
 
 ---
 
 <div align="center">
 
-**KRAKEN.** — *Your games. Your space.*
+  ## Get Kraken Launcher
+
+  **Windows 10 / 11 (64-bit)**
+
+  [**Download the latest release**](https://github.com/KrakenPiracy/KrakenLauncher-Updates/releases)
+
+  <sub>Download `KrakenLauncher.exe` from GitHub Releases. No Python installation required.</sub>
 
 </div>
