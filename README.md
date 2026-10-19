@@ -1,20 +1,28 @@
-# Kraken Launcher — Official Windows Releases
+# Kraken Launcher — Official Releases
 
-This repository hosts compiled **Kraken Launcher Windows releases**. The launcher checks GitHub Releases for updates.
+**Kraken's first public version will be v0.1.** Earlier v0.9.x builds were internal development versions, not public releases. The owner decides when the next release occurs; the following update will be **v0.2**, with its own patch notes, only when requested.
 
-## For players
+## Downloading Kraken
 
-Download `KrakenLauncher.exe` from the [Releases page](https://github.com/KrakenPiracy/KrakenLauncher-Updates/releases) once the first release has been published. The first updater-enabled version must be installed manually; future versions can update inside Kraken.
+When the first signed, Windows-tested release has been published, visit [GitHub Releases](https://github.com/KrakenPiracy/KrakenLauncher-Updates/releases) and download **KrakenLauncher.exe**. It is a standalone Windows application; users do not need Python.
 
-## For release publishing
+**Publication status:** The v0.1 source release candidate exists, but the compiled Windows EXE and signed release manifest must be created and tested on Windows before a GitHub Release is published. An empty/unverified release is deliberately not published.
 
-Every normal release must contain **exactly** these two update assets:
+## How releases work
 
-- `KrakenLauncher.exe` — Windows self-contained launcher
-- `kraken-update.json` — signed manifest
+Each published normal release must contain two assets:
 
-Use a version tag matching the signed manifest, e.g. `v0.9.9.6`. Generate the signing key **only on your trusted Windows build PC** via `setup_update_signing.bat` in the launcher source. The key is stored outside the repo. Subsequent builds use `build_exe.bat`, which signs the release manifest automatically.
+- `KrakenLauncher.exe` — standalone launcher for Windows
+- `kraken-update.json` — an Ed25519-signed SHA-256 manifest
 
-**Do not upload** the private signing key or its passphrase, account tokens, Firebase session files, users' data, or untested binaries.
+The first release tag is **`v0.1`**; a future release would be tagged `v0.2` only when explicitly approved. The updater prompts before downloading or installing.
 
-See `AUTOMATIC_UPDATES_SETUP.md` inside the Kraken Launcher v0.9.9.6 source package for full instructions. A signed update is not a substitute for testing on Windows or Windows publisher code signing.
+### Publishing (release owner only)
+
+On a trusted Windows 10/11 x64 build PC, extract the v0.1 source kit and read `V0_1_WINDOWS_RELEASE_CHECKLIST.md`. Run `setup_update_signing.bat` once to create your local private release key, then `build_exe.bat`. Test the EXE on two Windows PCs, then publish both assets on the [Releases page](https://github.com/KrakenPiracy/KrakenLauncher-Updates/releases/new).
+
+**Never publish** private signing keys, Firebase service-account secrets, session tokens, password files, or user profile data.
+
+### Security warning
+
+Firebase account records are protected by Firestore rules, but public MQTT chat usernames and bans are **not server-authenticated** yet; modified clients can impersonate chat names or evade client-side moderation. A signed update is **not** Microsoft Authenticode publisher signing. These limitations need to be addressed before advertising the product as hardened against malicious users.
